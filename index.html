@@ -1,11 +1,12 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emoji Symbols : ✂️ Copy and 📋 Paste Emoji 👍 | Free Emoji PNGs</title>
+    <title>Quick Emoji : ✂️ Copy and 📋 Paste Emoji 👍 | Free Emoji PNGs</title>
 
     <link rel="icon" type="image/x-icon" href="https://www.useoftools.com/favicon.png" />
     <meta name="description"
@@ -205,19 +206,32 @@
             /* Uses the button's text color */
         }
 
-        .emoji-actions {
-            margin-top: auto;
-            /* Pushes actions to the bottom */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* Ensure vertical alignment of buttons */
-            gap: 0.5rem;
+    .emoji-actions {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+    }
 
-            /* Added some space above buttons */
+        .emoji-actions button {
+        flex: 1 1 auto; /* Ensure buttons resize properly */
+        max-width: 100px; /* Optional: Limit button width */
+    }
+
+
+
+ @media (max-width: 600px) {
+        .emoji-actions {
+            gap: 0.3rem; /* Reduce gap for smaller screens */
         }
 
-        @media (max-width: 600px) {
+        .emoji-card {
+            min-height: 180px; /* Increase card height for better spacing */
+        }
+
+
             .emoji-grid {
                 grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
             }
@@ -327,7 +341,7 @@
 
 <body id="page-top"> <!-- Removed duplicate body tag -->
     <header>
-        <a href="https://www.useoftools.com/emoji" class="navbar-brand">Emoji Symbols</a>
+        <a href="https://www.useoftools.com/emoji" class="navbar-brand">Quick Emoji</a>
     </header>
 
     <main>
